@@ -22,6 +22,10 @@ public class SavingsAccount extends BankAccount {
     }
 
 
+    public String toString() {
+        return "Name :"+name+"\nAccount Number : "+accnum+ "\nBalance : "+balance;
+    }
+
     public double calcTax() {
         double tax = 0;
         double rate = 0.1;
