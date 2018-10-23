@@ -5,7 +5,7 @@ public class Computer implements IDable{
     protected Memory memory;
 
 
-    public Computer(){
+    public Computer(String make,String Id,String type,int size ){
         setId(Id);
         setMake(make);
 
@@ -13,6 +13,15 @@ public class Computer implements IDable{
         setMemory(type,size);
     }
 
+    public Computer(String id, String make, Memory memory) {
+        Id = id;
+        this.make = make;
+        this.memory = memory;
+    }
+
+    private void setMemory(String type, int size) {
+
+    }
 
     public String getId() {
         return Id;
